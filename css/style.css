@@ -98,8 +98,8 @@ section.home {
   z-index: 15;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
 
 .navigation.active {
   left: 0;
@@ -157,4 +157,58 @@ section.home {
   bottom: 0;
   right: 0;
   height: 110%;
+}
+
+/*usluge */
+.usluge {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap:  40px;
+}
+
+.usluge .usluga .icon img {
+  max-width: 100px;
+}
+
+.usluge .usluga {
+  padding: 30px;
+}
+
+.usluge .usluga:hover {
+  box-shadow: 0 10px 30px rgba(0, 0,0, 0.1)
+}
+
+.usluge .usluga h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  color:#1b206e;
+}
+
+@media (max-width :1068px) {
+  .home-img {
+    display: none;
+  }
+
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 100px 40px;
+  }
+
+.usluge {
+  
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+  .navigation ul li a {
+    font-size: 2rem;
+  }
 }
